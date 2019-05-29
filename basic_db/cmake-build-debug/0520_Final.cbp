@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="0520_Final"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="0520_Final">
+				<Option output="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/0520_Final.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 0520_Final"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="0520_Final/fast">
+				<Option output="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/0520_Final.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 0520_Final/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Parser.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Parser.h">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Record.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Record.h">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/SQL.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/SQL.h">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Table.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Table.h">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/stokenizer.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/stokenizer.h">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/main.cpp">
+			<Option target="0520_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

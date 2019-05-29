@@ -1,0 +1,21 @@
+create table students fields first, last, age, major
+insert into students values Lydia, Smith, 19, Physics
+insert into students values Joe, Blow, 23, CS
+insert into students values Richard, Wang, 20, CS
+insert into students values Ricky, Martin, 47, Music
+insert into students values James, Lee, 24, Math
+select * from students
+select first, major from students
+select * from students where age >= 20
+select * from students where age > 20
+select * from students where age < 20
+select * from students where age <= 20
+select * from students where age >= 21
+select * from students where age > 21
+select * from students where age < 21
+select * from students where age <= 21
+select * from students where age >= 20 and last > Blow
+select * from students where age >= 21 and major = CS
+select * from students where age = 20 or major = Music
+select first, major from students where age = 26
+select first, major from students where major = CS

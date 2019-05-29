@@ -1,0 +1,841 @@
+
+//****************************************************************************
+//		CREATE TABLES AND INSERT RECORDS
+//****************************************************************************
+
+
+[0] make table employee fields  last, 		first, 			dep,  		salary, 	year
+SQL: [employee] is created. 
+
+[1] insert into employee values Blow, 		Joe, 			CS,		 	100000, 	2018
+SQL: inserted record into [employee]
+
+[2] insert into employee values Blow, 		JoAnn,			Physics, 	200000, 	2016
+SQL: inserted record into [employee]
+
+[3] insert into employee values Johnson, 	Jack, 			HR, 		150000, 	2014
+SQL: inserted record into [employee]
+
+[4] insert into employee values Johnson, 	"Jimmy", 		Chemistry,	140000, 	2018
+SQL: inserted record into [employee]
+
+[5] insert into employee values Yao,	 	Jimmy, 			Math,		145000, 	2014
+SQL: inserted record into [employee]
+
+[6] insert into employee values "Yao", 		Flo, 			CS,			147000, 	2012
+SQL: inserted record into [employee]
+
+[7] insert into employee values Yang, 		Bo, 			CS,			160000, 	2013
+SQL: inserted record into [employee]
+
+[8] insert into employee values Jackson,	"Flo", 			Math,		165000, 	2017
+SQL: inserted record into [employee]
+
+[9] insert into employee values Jackson,	Bo,	 			Chemistry,	130000, 	2011
+SQL: inserted record into [employee]
+
+[10] insert into employee values "Jackson",	Billy, 			Math,	 	170000, 	2017
+SQL: inserted record into [employee]
+
+[11] insert into employee values Johnson,	"Mary Ann", 	Math,		165000, 	2014
+SQL: inserted record into [employee]
+
+[12] insert into employee values Johnson,	"Billy Bob", 	Physics,	142000, 	2014
+SQL: inserted record into [employee]
+
+[13] insert into employee values Johnson,	Billy, 			"Phys Ed",	102000, 	2014
+SQL: inserted record into [employee]
+
+[14] insert into employee values "Van Gogh",	Vincent, 		Art,		240000, 	2015
+SQL: inserted record into [employee]
+
+[15] insert into employee values "Van Gogh",	Vincent, 		CS,			245000, 	2015
+SQL: inserted record into [employee]
+
+[16] insert into employee values "Van Gogh",	"Jim Bob", 		"Phys Ed",	230000, 	2010
+SQL: inserted record into [employee]
+
+[17] select * from employee 
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+    1           Blow          JoAnn        Physics         200000           2016
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+    8        Jackson             Bo      Chemistry         130000           2011
+    9        Jackson          Billy           Math         170000           2017
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+
+
+[18] make table student fields fname, lname, major, age, company
+SQL: [student] is created. 
+
+[19] insert into student values Flo, 			Yao, 		CS, 				20, 	Google
+SQL: inserted record into [student]
+
+[20] insert into student values Bo, 				Yang, 		CS, 				28,		Microsoft
+SQL: inserted record into [student]
+
+[21] insert into student values "Sammuel L.", 	Jackson, 	CS, 				40,		Uber
+SQL: inserted record into [student]
+
+[22] insert into student values "Flo", 			"Jackson", 	Math,	 			21,		Google
+SQL: inserted record into [student]
+
+[23] insert into student values "Greg", 			"Pearson", 	Physics,			20,		Amazon
+SQL: inserted record into [student]
+
+[24] insert into student values "Jim Bob", 		Smith, 		Math,	 			23,		Verizon
+SQL: inserted record into [student]
+
+[25] insert into student values Calvin, 			Woo, 		Physics,			22,		Uber
+SQL: inserted record into [student]
+
+[26] insert into student values "Anna Grace", 	"Del Rio", 	CS,	 				22,		USAF
+SQL: inserted record into [student]
+
+[27] insert into student values "Teresa Mae", 	Gowers, 	Chemistry,			22,		Verizon
+SQL: inserted record into [student]
+
+[28] insert into student values Alex,			Smith,		"Gender Studies", 	53,		Amazon
+SQL: inserted record into [student]
+
+[29] select * from student
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+    5        Jim Bob          Smith           Math             23        Verizon
+    6         Calvin            Woo        Physics             22           Uber
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    9           Alex          Smith Gender Studies             53         Amazon
+
+
+
+//****************************************************************************
+//		SIMPLE SELECT:
+//****************************************************************************
+
+[30] select * from student
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+    5        Jim Bob          Smith           Math             23        Verizon
+    6         Calvin            Woo        Physics             22           Uber
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    9           Alex          Smith Gender Studies             53         Amazon
+
+
+//------- simple strings -------------------
+[31] select * from student where lname = Jackson
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+
+[32] select * from student where major = CS
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[33] select * from student where company = Uber
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    6         Calvin            Woo        Physics             22           Uber
+
+
+//----- quoted strings ---------------------
+[34] select * from student where lname = "Del Rio"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[35] select * from student where fname = "Jim Bob"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    5        Jim Bob          Smith           Math             23        Verizon
+
+[36] select * from student where fname = "Anna Grace"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[37] select * from student where fname = "Teresa Mae"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+
+//-------- non-existing string ------------------
+[38] select * from student where lname = "Does Not Exist"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+
+//****************************************************************************
+//		RELATIONAL OPERATORS:
+//****************************************************************************
+
+//.................
+//:Greater Than   :
+//.................
+[39] select * from student where lname > Yang
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+
+[40] select * from student where major > Math
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    4           Greg        Pearson        Physics             20         Amazon
+    6         Calvin            Woo        Physics             22           Uber
+
+[41] select * from student where fname > "Sammuel L."
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+[42] select * from employee where salary > 200000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+[43] select * from employee where dep > Chemistry
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    2        Johnson           Jack             HR         150000           2014
+    4            Yao          Jimmy           Math         145000           2014
+    7        Jackson            Flo           Math         165000           2017
+    9        Jackson          Billy           Math         170000           2017
+   10        Johnson       Mary Ann           Math         165000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    1           Blow          JoAnn        Physics         200000           2016
+   11        Johnson      Billy Bob        Physics         142000           2014
+
+[44] select * from employee where last > Jackson
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    6           Yang             Bo             CS         160000           2013
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+
+[45] select * from employee where first > "Billy Bob"
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    6           Yang             Bo             CS         160000           2013
+    8        Jackson             Bo      Chemistry         130000           2011
+    5            Yao            Flo             CS         147000           2012
+    7        Jackson            Flo           Math         165000           2017
+    2        Johnson           Jack             HR         150000           2014
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    3        Johnson          Jimmy      Chemistry         140000           2018
+    4            Yao          Jimmy           Math         145000           2014
+    1           Blow          JoAnn        Physics         200000           2016
+    0           Blow            Joe             CS         100000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+
+
+//. . . . . . . . . . . . . (Greater Than: Non-existing) . . . . . . . . . . . . . . . . . . . . . 
+[46] select * from student where age > 50
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[47] select * from student where age > 35
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[48] select * from student where fname > T
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+[49] select * from employee where salary > 130000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   11        Johnson      Billy Bob        Physics         142000           2014
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+    2        Johnson           Jack             HR         150000           2014
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+   10        Johnson       Mary Ann           Math         165000           2014
+    9        Jackson          Billy           Math         170000           2017
+    1           Blow          JoAnn        Physics         200000           2016
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+[50] select * from employee where  year > 2009
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    8        Jackson             Bo      Chemistry         130000           2011
+    5            Yao            Flo             CS         147000           2012
+    6           Yang             Bo             CS         160000           2013
+    2        Johnson           Jack             HR         150000           2014
+    4            Yao          Jimmy           Math         145000           2014
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+    1           Blow          JoAnn        Physics         200000           2016
+    7        Jackson            Flo           Math         165000           2017
+    9        Jackson          Billy           Math         170000           2017
+    0           Blow            Joe             CS         100000           2018
+    3        Johnson          Jimmy      Chemistry         140000           2018
+
+
+//. . . . . . . . . . . . . (Greater than: last item) . . . . . . . . . . . . . . . . . .
+[51] select * from student where age  > 53
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[52] select * from student where lname > Yao
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[53] select * from student where fname > "Teresa Mae"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[54] select * from employee where last > "Van Gogh"
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    6           Yang             Bo             CS         160000           2013
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+
+[55] select * from employee where first > Vincent
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[56] select * from employee where salary > 260000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+
+//. . . . . . . . . . . . . (Greater Than: Passed last item) . . . . . . . . . . . . . . . . . . . . . 
+[57] select * from student where age > 54
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[58] select * from student where lname > Zoolander
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[59] select * from employee where last > Zoolaner
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[60] select * from employee where first > Xu
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+
+//.................
+//:Greater Equal  :
+//.................
+[61] select * from student where lname >= Yang
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    1             Bo           Yang             CS             28      Microsoft
+    0            Flo            Yao             CS             20         Google
+
+[62] select * from student where fname >= "Sammuel L."
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+[63] select * from student where age >= 40
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    9           Alex          Smith Gender Studies             53         Amazon
+
+//. . . . . .  (Greater Equal non-existing: ) . . . . . . . . . . . 
+[64] select * from employee where last >= Jack
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    7        Jackson            Flo           Math         165000           2017
+    8        Jackson             Bo      Chemistry         130000           2011
+    9        Jackson          Billy           Math         170000           2017
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    6           Yang             Bo             CS         160000           2013
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+
+[65] select * from employee where first >= Bill
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    9        Jackson          Billy           Math         170000           2017
+   12        Johnson          Billy        Phys Ed         102000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+    6           Yang             Bo             CS         160000           2013
+    8        Jackson             Bo      Chemistry         130000           2011
+    5            Yao            Flo             CS         147000           2012
+    7        Jackson            Flo           Math         165000           2017
+    2        Johnson           Jack             HR         150000           2014
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+    3        Johnson          Jimmy      Chemistry         140000           2018
+    4            Yao          Jimmy           Math         145000           2014
+    1           Blow          JoAnn        Physics         200000           2016
+    0           Blow            Joe             CS         100000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+[66] select * from employee where salary >= 235000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+
+
+//.................
+//:Less Than      :
+//.................
+
+
+//. . . . . . . . . . . . . (Less Than: Non-existing) . . . . . . . . . . . . . . . . . . . . . 
+[67] select * from student where lname < Jackson
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+[68] select * from student where major < Math
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[69] select * from student where fname < "Jim Bob"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    9           Alex          Smith Gender Studies             53         Amazon
+    7     Anna Grace        Del Rio             CS             22           USAF
+    1             Bo           Yang             CS             28      Microsoft
+    6         Calvin            Woo        Physics             22           Uber
+    0            Flo            Yao             CS             20         Google
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+
+[70] select * from employee where salary < 200000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+   12        Johnson          Billy        Phys Ed         102000           2014
+    8        Jackson             Bo      Chemistry         130000           2011
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   11        Johnson      Billy Bob        Physics         142000           2014
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+    2        Johnson           Jack             HR         150000           2014
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+   10        Johnson       Mary Ann           Math         165000           2014
+    9        Jackson          Billy           Math         170000           2017
+
+[71] select * from employee where dep < CS
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+   13       Van Gogh        Vincent            Art         240000           2015
+
+[72] select * from employee where last < Jackson
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+    1           Blow          JoAnn        Physics         200000           2016
+
+[73] select * from employee where first < "Billy Bob"
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    9        Jackson          Billy           Math         170000           2017
+   12        Johnson          Billy        Phys Ed         102000           2014
+
+
+//. . . . . . . . . . . . . (Less than: first item) . . . . . . . . . . . . . . . . . .
+[74] select * from student where age  < 20
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[75] select * from student where lname < "Del Rio"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[76] select * from student where fname < Alex
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[77] select * from employee where last < Blow
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[78] select * from employee where first < Billy
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[79] select * from employee where salary < 100000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+
+
+//. . . . . . . . . . . . . (Less Than: before first item) . . . . . . . . . . . . . . . . . . . . . 
+
+[80] select * from student where age  < 19
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[81] select * from student where lname < Adams
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[82] select * from student where fname < Adam
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+
+[83] select * from employee where last < Alex
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[84] select * from employee where first < Avory
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+[85] select * from employee where dep < Alchemy
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+
+
+
+//.................
+//:Less Equal     :
+//.................
+
+[86] select * from student where lname <= Smith
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+    5        Jim Bob          Smith           Math             23        Verizon
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[87] select * from student where fname <= Greg
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    9           Alex          Smith Gender Studies             53         Amazon
+    7     Anna Grace        Del Rio             CS             22           USAF
+    1             Bo           Yang             CS             28      Microsoft
+    6         Calvin            Woo        Physics             22           Uber
+    0            Flo            Yao             CS             20         Google
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+
+[88] select * from student where age <= 40
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    4           Greg        Pearson        Physics             20         Amazon
+    3            Flo        Jackson           Math             21         Google
+    6         Calvin            Woo        Physics             22           Uber
+    7     Anna Grace        Del Rio             CS             22           USAF
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    5        Jim Bob          Smith           Math             23        Verizon
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+
+
+//. . . . . .  (Less Equal non-existing: ) . . . . . . . . . . . 
+[89] select * from employee where last <= Peach
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+    1           Blow          JoAnn        Physics         200000           2016
+    7        Jackson            Flo           Math         165000           2017
+    8        Jackson             Bo      Chemistry         130000           2011
+    9        Jackson          Billy           Math         170000           2017
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+
+[90] select * from employee where first <= Gary
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    9        Jackson          Billy           Math         170000           2017
+   12        Johnson          Billy        Phys Ed         102000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+    6           Yang             Bo             CS         160000           2013
+    8        Jackson             Bo      Chemistry         130000           2011
+    5            Yao            Flo             CS         147000           2012
+    7        Jackson            Flo           Math         165000           2017
+
+[91] select * from employee where salary <= 23500
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+   12        Johnson          Billy        Phys Ed         102000           2014
+    8        Jackson             Bo      Chemistry         130000           2011
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   11        Johnson      Billy Bob        Physics         142000           2014
+    4            Yao          Jimmy           Math         145000           2014
+    5            Yao            Flo             CS         147000           2012
+    2        Johnson           Jack             HR         150000           2014
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+   10        Johnson       Mary Ann           Math         165000           2014
+    9        Jackson          Billy           Math         170000           2017
+    1           Blow          JoAnn        Physics         200000           2016
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+
+
+//****************************************************************************
+//		LOGICAL OPERATORS
+//****************************************************************************
+
+
+//.................
+//:AND            :
+//.................
+
+[92] select * from student where fname = "Flo" and lname = "Yao"
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+
+[93] select * from student where major = "CS" and age < 25
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[94] select * from student where major < Math and age > 25
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    1             Bo           Yang             CS             28      Microsoft
+    2     Sammuel L.        Jackson             CS             40           Uber
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[95] select * from employee where dep = CS and salary > 150000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    6           Yang             Bo             CS         160000           2013
+   14       Van Gogh        Vincent             CS         245000           2015
+
+[96] select * from employee where last = Jackson and year < 2015
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    8        Jackson             Bo      Chemistry         130000           2011
+
+[97] select * from employee where last = Johnson and year >=2014
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+
+
+
+//.................
+//:OR            :
+//.................
+[98] select * from student where fname = Flo or lname = Jackson
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+
+[99] select * from student where age >=40  or company = Verizon
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    5        Jim Bob          Smith           Math             23        Verizon
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+    9           Alex          Smith Gender Studies             53         Amazon
+
+[100] select * from employee where first = Bo or last = Johnson
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    2        Johnson           Jack             HR         150000           2014
+    3        Johnson          Jimmy      Chemistry         140000           2018
+    6           Yang             Bo             CS         160000           2013
+    8        Jackson             Bo      Chemistry         130000           2011
+   10        Johnson       Mary Ann           Math         165000           2014
+   11        Johnson      Billy Bob        Physics         142000           2014
+   12        Johnson          Billy        Phys Ed         102000           2014
+
+[101] select * from employee where year >= 2015 or dep = CS
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+    1           Blow          JoAnn        Physics         200000           2016
+    3        Johnson          Jimmy      Chemistry         140000           2018
+    5            Yao            Flo             CS         147000           2012
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+    9        Jackson          Billy           Math         170000           2017
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+
+
+//.................
+//:OR AND         :
+//.................
+[102] select * from student where fname = Flo or major = CS and age <= 23
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    3            Flo        Jackson           Math             21         Google
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[103] select * from student where lname = Jackson or age < 23 and company > Uber
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+    8     Teresa Mae         Gowers      Chemistry             22        Verizon
+
+[104] select * from employee where last = "Van Gogh" or last = Jackson and salary >= 165000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    7        Jackson            Flo           Math         165000           2017
+    9        Jackson          Billy           Math         170000           2017
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+   15       Van Gogh        Jim Bob        Phys Ed         230000           2010
+
+
+
+//.................
+//:AND OR AND     :
+//.................
+
+[105] select * from student where age <30 and major=CS or major = Physics and company = Amazon
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    4           Greg        Pearson        Physics             20         Amazon
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[106] select * from student where age <=40 and company=Uber or major = CS and company = Google
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    2     Sammuel L.        Jackson             CS             40           Uber
+    6         Calvin            Woo        Physics             22           Uber
+
+[107] select * from employee where dep = CS and salary >= 160000 or year > 2014 and last = "Van Gogh"
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    6           Yang             Bo             CS         160000           2013
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+
+
+//.................
+//:OR AND OR      :
+//.................
+
+[108] select * from student where lname = Yang or major = CS and age < 23 or company = Google 
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    0            Flo            Yao             CS             20         Google
+    1             Bo           Yang             CS             28      Microsoft
+    3            Flo        Jackson           Math             21         Google
+    7     Anna Grace        Del Rio             CS             22           USAF
+
+[109] select * from student where major = Physics or major = Math and company = Google or lname = Jackson
+    #          fname          lname          major            age        company
+--------------------------------------------------------------------------------
+    2     Sammuel L.        Jackson             CS             40           Uber
+    3            Flo        Jackson           Math             21         Google
+    4           Greg        Pearson        Physics             20         Amazon
+    6         Calvin            Woo        Physics             22           Uber
+
+[110] select * from employee where dep = CS or year >2014 and year < 2018 or salary >= 265000
+    #           last          first            dep         salary           year
+--------------------------------------------------------------------------------
+    0           Blow            Joe             CS         100000           2018
+    1           Blow          JoAnn        Physics         200000           2016
+    5            Yao            Flo             CS         147000           2012
+    6           Yang             Bo             CS         160000           2013
+    7        Jackson            Flo           Math         165000           2017
+    9        Jackson          Billy           Math         170000           2017
+   13       Van Gogh        Vincent            Art         240000           2015
+   14       Van Gogh        Vincent             CS         245000           2015
+
+
+
+
+
+
+
+
+
+
+

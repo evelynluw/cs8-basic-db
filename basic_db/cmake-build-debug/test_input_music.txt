@@ -1,0 +1,15 @@
+// ignore this line
+create table songs fields title, artist, album
+insert into songs values "Eletric Feel", "MGMT", "Oracular Spectacular"
+insert into songs values "Kids", "MGMT", "Oracular Spectacular"
+insert into songs values "Los Angeles", "St. Vincent", "Masseducation"
+insert into songs values "Prince Johnny", "St. Vincent", "St. Vincent (Deluxe)"
+insert into songs values "L$D", "A$AP Rocky", "AT.LONG.LAST.A$AP"
+insert into songs values Sunflower, "Post Malone", "Spider-Man"
+select * from songs
+select * from songs where artist = "MGMT"
+select * from songs where album = "Oracular Spectacular"
+select * from songs where artist = 'St. Vincent'
+select artist from songs where title = Sunflower
+select song, album from songs where artist = "ASAP Rocky"
+select song, album from songs where artist = "A$AP Rocky"

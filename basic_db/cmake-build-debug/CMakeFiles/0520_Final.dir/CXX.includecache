@@ -1,0 +1,90 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Parser.h
+iostream
+-
+libs/Map.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/Map.h
+libs/MMap.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/MMap.h
+libs/stokenizer.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/stokenizer.h
+bits/stdc++.h
+-
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Record.h
+vector
+-
+iostream
+-
+fstream
+-
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/SQL.cpp
+SQL.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/SQL.h
+iomanip
+-
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/SQL.h
+Parser.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Parser.h
+Table.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Table.h
+Record.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Record.h
+libs/Map.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/Map.h
+libs/MMap.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/MMap.h
+stack
+-
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/Table.h
+vector
+-
+libs/Map.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/Map.h
+libs/MMap.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/MMap.h
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/BPTree.h
+iostream
+-
+iomanip
+-
+cassert
+-
+array_utilities.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/array_utilities.h
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/MMap.h
+vector
+-
+BPTree.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/BPTree.h
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/Map.h
+BPTree.h
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/BPTree.h
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/array_utilities.h
+iostream
+-
+vector
+-
+
+C:/Users/Evelyn/Google Drive (ylu40@go.pasadena.edu)/CS 8/Projects/0520_Final/0520_Final/libs/stokenizer.h
+iostream
+-
+iomanip
+-
+map
+-
+
